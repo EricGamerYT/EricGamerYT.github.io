@@ -380,7 +380,7 @@ p{
 @media screen and (max-width: 800px){
    
     body{
-        overflow: hidden;
+        overflow
     }
 
    .container-all{
@@ -437,7 +437,6 @@ p{
 
     #icon-menu{
         display: flex;
-
     }
 
     .container-aside{
