@@ -379,10 +379,7 @@ p{
 
 @media screen and (max-width: 800px){
    
-    body{
-        overflow
-    }
-
+    
    .container-all{
        transition: all 400ms cubic-bezier(1,0,0,1);
    }
