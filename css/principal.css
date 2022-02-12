@@ -442,3 +442,10 @@ p{
 
 
 }
+
+a1:hover{
+    background: rgb(255, 47, 47);
+    border-radius: 7px;
+    color: whitesmoke;
+    cursor: pointer;
+}
