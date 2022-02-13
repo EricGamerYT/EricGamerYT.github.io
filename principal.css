@@ -221,11 +221,8 @@ article img{
     border-radius: 6px;
 }
 
-.container-content a{
+article-2 a{
     color: #1d1d1d;
-}
-
-.container-content a:hover{
     background: rgb(255, 47, 47);
     border-radius: 7px;
     color: whitesmoke;
@@ -451,6 +448,5 @@ p{
     .container-aside{
         flex-wrap: wrap;
     }
-
 
 }
