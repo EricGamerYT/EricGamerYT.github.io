@@ -218,6 +218,14 @@ article p{
 article img{
     width: 80%;
     margin-top: 50px;
+    border-radius: 6px;
+}
+
+.container-content a:hover{
+    background: rgb(255, 47, 47);
+    border-radius: 7px;
+    color: whitesmoke;
+    cursor: pointer;
 }
 
 article p{
@@ -443,9 +451,4 @@ p{
 
 }
 
-a1:hover{
-    background: rgb(255, 47, 47);
-    border-radius: 7px;
-    color: whitesmoke;
-    cursor: pointer;
 }
