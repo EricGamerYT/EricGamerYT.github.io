@@ -43,6 +43,14 @@
     to { transform: rotate(360deg); }
 }
 
+body{
+    cursor: url(img/default.png), auto;
+}
+
+a{
+    cursor: url(img/pointer.png), auto;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -123,6 +131,7 @@ header{
     color: whitesmoke;
     font-size: 18px;
     transition: color 300ms;
+    cursor: url(img/pointer.png), auto;
 }
 
 .menu .text-menu-selected{
@@ -270,6 +279,7 @@ article-2 a{
     border-radius: 7px;
     color: whitesmoke;
     cursor: pointer;
+    cursor: url(img/pointer.png), auto;
 }
 
 article p{
@@ -314,6 +324,7 @@ p{
     color: #fff;
     cursor: pointer;
     border-radius: 6px; 
+    cursor: url(img/pointer.png), auto;
 }
 
 .container-aside aside button:hover{
@@ -365,16 +376,19 @@ p{
 .container-footer footer .redes-footer .fa-google-plus-g:hover{
     background: #DE4C34;
     color: #fff;
+    cursor: url(img/pointer.png), auto;
 }
 
 .container-footer footer .redes-footer .fa-instagram:hover{
     background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
-    color: #fff;    
+    color: #fff;   
+    cursor: url(img/pointer.png), auto; 
 }
 
 .container-footer footer .redes-footer .fa-youtube:hover{
     background: rgb(255, 47, 47);
     color: #fff;
+    cursor: url(img/pointer.png), auto;
 }
 
 .container-footer footer hr{
