@@ -164,6 +164,19 @@ header{
     cursor: pointer;
 }
 
+/*Portada*/
+
+.article-container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/FONDO-WEB.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /*Footer - pie de pagina*/
 
 .container-footer{
