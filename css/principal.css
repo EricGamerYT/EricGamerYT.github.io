@@ -295,6 +295,7 @@ header{
 
     .menu-selected:before{
         width: 0;
+        display: none;
     }
 
     .menu nav ul li a{
