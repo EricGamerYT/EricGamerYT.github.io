@@ -106,7 +106,7 @@ input[type="radio"]{
     margin: 10px;
     font-size: 20px;
     background: #e2e2e2;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 40px;
     cursor: url(img/default.png), auto;
     box-shadow: 0 0  15px -7px rgb(255, 47, 47);
@@ -116,8 +116,8 @@ input[type="radio"]{
     background: rgba(255, 47, 47);
     color: rgb(255, 255, 255);
     opacity: 0.9;
-    transition: transform .3s;
-    transform: translateY(-15px);  
+    transition: transform .4s;
+    transform: scale(.9);  
 }
 
 
@@ -148,8 +148,10 @@ input[type="radio"]{
 }
 
 .posts .post:hover{
-    background: black;
-    color: whitesmoke;
+    background: rgb(255, 155, 155);
+    color: rgb(0, 0, 0);
+    transition: transform .4s;
+    transform: translateY(-15px);
 }
 
 .post .ctn-img{
