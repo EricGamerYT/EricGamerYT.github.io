@@ -161,7 +161,6 @@ input[type="radio"]{
 .post .ctn-img:hover{
     transition: transform .3s;
     transform: scale(.95);
-    
 }
 
 .post .ctn-img img{
@@ -236,3 +235,35 @@ input[type="radio"]{
     background: rgba(255, 47, 47);
     color: whitesmoke;
 }
+
+.ventana{
+    background: rgb(255, 47, 47);
+    width: 35%;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 400px;
+    border-radius: 22px;
+    position: absolute;
+    left: 34%;
+    top: 350px;
+    display: none;
+}
+
+.cerrar{
+    min-width: 5%;
+    min-height: 5%;
+    position: absolute;
+    left: 685px;
+    bottom: 345px;
+    cursor: url(img/pointer.png), auto;
+}
+
+.cerrar:hover{
+    transition: transform 0.5s;
+    transform: scale(1.5);
+    
+}
+

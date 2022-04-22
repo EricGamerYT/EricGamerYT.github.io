@@ -35,7 +35,7 @@
                     <ul>
                           <li><a href="articulo.html"><i class="fas fa-home"></i>Inicio</a></li> 
                           <li class="menu-selected"><a href="#" class="text-menu-selected"><i class="fab fa-youtube"></i>Tutoriales</a></li>
-                          <li><a href="#"><i class="fas fa-headset"></i>Contacto</a></li>
+                          <li><a href="javascript:abrir()"><i class="fas fa-headset"></i>Contacto</a></li>
                           <li><a href="#"><i class="fas fa-gamepad"></i>Sobre mi</a></li>
 
                     </ul>
@@ -45,13 +45,37 @@
 
         </div>
 
+        <div class="ventana" id="vent">
+
+            <div class="cerrar"> <a href="javascript:cerrar()"><img src="img/cruz.png" alt=""></a> </div>
+
+            Bienvenido(a) al formulario de contacto de GAMER SPACE
+
+        <div class="container-form">
+            <form action="https://formspree.io/f/xayvprrn" method="post">
+                <label for="nombre">Nombre:</label> 
+                <input type="text" name="Nombre" id="nombre" />
+                <br />
+                <label for="email">Email:</label>
+
+                <input type="email" name="Email" id="email" />
+                <br />
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+                <br /> 
+                <input type="submit" value="Enviar" />
+            </form>
+        </div>
+            
+        
+        </div>
+
         <div id="icon-menu">
             <i class="fas fa-bars"></i>
         </div>
 
     </header>
-    
-    
+
       <!--portada-->  
 
 <div class="container-all" id="move-content">
@@ -258,7 +282,7 @@
             </div>
 
             <div class="redes-footer">
-               <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+               <a href="contacto.html"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
                <a href="https://bit.ly/3DrrUNX" target="_blank"><i class="fab fa-instagram icon-redes-footer"></i></a>
                <a href="https://bit.ly/3LdjKew" target="_blank"><i class="fab fa-youtube icon-redes-footer"></i></a>
             </div>
@@ -281,6 +305,18 @@
         contenedor.style.visibility = 'hidden';
         contenedor.style.opacity = '0';
     }
+</script>
+
+<script>
+    
+    function abrir() {
+        document.getElementById("vent") .style.display="block";
+    }
+
+    function cerrar() {
+        document.getElementById("vent") .style.display="none";
+    }
+
 </script>
 
 </body>
