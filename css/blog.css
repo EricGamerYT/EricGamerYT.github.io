@@ -140,7 +140,7 @@ input[type="radio"]{
 }
 
 .posts .post{
-    background-color: rgb(243, 241, 241);
+    background-color: rgb(214, 210, 210);
     box-shadow: 0 0 35px -20px black;
     border-radius: 6px;
     overflow: hidden;
@@ -220,21 +220,41 @@ input[type="radio"]{
 
 /*Sistema de filtrado*/
 
-[value="PUBG MOBILE"]:checked ~ .posts .post:not([data-category~="PUBG MOBILE"]),
-[value="TRUCOS PC"]:checked ~ .posts .post:not([data-category~="TRUCOS PC"]),
-[value="TRUCOS ANDROID"]:checked ~ .posts .post:not([data-category~="TRUCOS ANDROID"]),
-[value="JUEGOS PC"]:checked ~ .posts .post:not([data-category~="JUEGOS PC"]){
+[value="PUBGMOBILE"]:checked ~ .posts .post:not([data-category~="PUBGMOBILE"]),
+[value="TRUCOSPC"]:checked ~ .posts .post:not([data-category~="TRUCOSPC"]),
+[value="TRUCOSANDROID"]:checked ~ .posts .post:not([data-category~="TRUCOSANDROID"]),
+[value="JUEGOSPC"]:checked ~ .posts .post:not([data-category~="JUEGOSPC"]){
     display: none;
 }
 
 [value="TODOS"]:checked ~ .container-category [for="TODOS"],
-[value="PUBG MOBILE"]:checked ~ .container-category [for="PUBG MOBILE"],
-[value="TRUCOS PC"]:checked ~ .container-category [for="TRUCOS PC"],
-[value="TRUCOS ANDROID"]:checked ~ .container-category [for="TRUCOS ANDROID"],
-[value="JUEGOS PC"]:checked ~ .container-category [for="JUEGOS PC"]{
+[value="PUBGMOBILE"]:checked ~ .container-category [for="PUBGMOBILE"],
+[value="TRUCOSPC"]:checked ~ .container-category [for="TRUCOSPC"],
+[value="TRUCOSANDROID"]:checked ~ .container-category [for="TRUCOSANDROID"],
+[value="JUEGOSPC"]:checked ~ .container-category [for="JUEGOSPC"]{
     background: rgba(255, 47, 47);
     color: whitesmoke;
 }
+
+
+@media screen and (max-width: 1220px){
+    .posts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px){
+    .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 .ventana{
     background: rgb(255, 47, 47);
@@ -255,10 +275,11 @@ input[type="radio"]{
 .cerrar{
     min-width: 5%;
     min-height: 5%;
-    position: absolute;
-    left: 685px;
+    position: center;
+    left: 600px;
     bottom: 345px;
     cursor: url(img/pointer.png), auto;
+    color: whitesmoke;
 }
 
 .cerrar:hover{
